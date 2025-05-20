@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div id="cursor"></div>
+    <div id="cursor-blur"></div>
+
+    <div class="particles-container">
+        <canvas id="particles"></canvas>
+    </div>
+
+    <header>
+        <div class="logo">
+            <div class="logo-text">Caio Matos Miranda</div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home" class="nav-link">Início</a></li>
+                <li><a href="#about" class="nav-link">Sobre</a></li>
+                <li><a href="#skills" class="nav-link">Habilidades</a></li>
+                <li><a href="#projects" class="nav-link">Projetos</a></li>
+                <li><a href="#contact" class="nav-link">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider round">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </div>
+            </label>
+        </div>
+        <div class="menu-btn">
+            <div class="menu-btn__burger"></div>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="glitch" data-text="Olá, eu sou">Olá, eu sou</h1>
+                <div class="typing-container">
+                    <span id="typing-text"></span><span class="cursor">|</span>
+                </div>
+                <p class="hero-description">
+                    <span class="highlight">Desenvolvedor Web</span> apaixonado por criar experiências digitais
+                    incríveis
+                </p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn primary-btn">Ver Projetos</a>
+                    <a href="#contact" class="btn secondary-btn">Contato</a>
+                </div>
+                <div class="social-icons">
+                    <a href="https://github.com/caiozin333" target="_blank" class="social-icon">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/caio-matos-miranda-0aa900349/" target="_blank"
+                        class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="tel:+5531988250983" class="social-icon">
+                        <i class="fas fa-phone"></i>
+                    </a>
+                    <a href="https://instagram.com/caiozin.mm" target="_blank" class="social-icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <div class="arrow">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about reveal">
+            <div class="section-header">
+                <h2 class="section-title">Sobre Mim</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <img src="img-perfil.png" alt="Minha foto">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>Quem sou eu?</h3>
+                    <p>Sou um desenvolvedor Full Stack em início de carreira, apaixonado por tecnologia e em constante
+                        aprendizado. Tenho conhecimentos em HTML, CSS e JavaScript no desenvolvimento Front-End, e venho
+                        aprofundando minhas habilidades em C# com ASP.NET Core no Back-End.</p>
+                    <p>Atualmente, estou em busca da minha primeira oportunidade de estágio, enquanto desenvolvo
+                        projetos próprios que me ajudam a aplicar e expandir meus conhecimentos práticos.
+                    </p>
+                    <div class="about-details">
+                        <div class="detail-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Brasil</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>caiomatosmiranda2008@gmail.com</span>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Técnico em Informatica</span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn download-btn">
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills reveal">
+            <div class="section-header">
+                <h2 class="section-title">Minhas Habilidades</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Desenvolvimento Frontend</h3>
+                    <div class="skill-item" data-skill="HTML">
+                        <div class="skill-info">
+                            <span>HTML</span>
+                            <span class="percentage">95%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-skill="CSS">
+                        <div class="skill-info">
+                            <span>CSS</span>
+                            <span class="percentage">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-skill="JavaScript">
+                        <div class="skill-info">
+                            <span>JavaScript</span>
+                            <span class="percentage">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Ferramentas & Outros</h3>
+                    <div class="skill-item" data-skill="Pacote Office">
+                        <div class="skill-info">
+                            <span>Pacote Office</span>
+                            <span class="percentage">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-skill="MySQL">
+                        <div class="skill-info">
+                            <span>MySQL</span>
+                            <span class="percentage">60%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 60%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item" data-skill="C#">
+                        <div class="skill-info">
+                            <span>C#</span>
+                            <span class="percentage">40%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 40%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects reveal">
+            <div class="section-header">
+                <h2 class="section-title">Meus Projetos</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="app">App</button>
+                <button class="filter-btn" data-filter="design">Design</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="web">
+                    <div class="project-img">
+                        <img src="https://via.placeholder.com/600x400" alt="Projeto 1">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Site E-commerce</h3>
+                        <p class="project-description">Um site de e-commerce completo com carrinho de compras e sistema
+                            de pagamento.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-eye"></i> Ver</a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Código</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="app">
+                    <div class="project-img">
+                        <img src="https://via.placeholder.com/600x400" alt="Projeto 2">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">App de Tarefas</h3>
+                        <p class="project-description">Aplicativo web para gerenciamento de tarefas com armazenamento
+                            local.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-eye"></i> Ver</a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Código</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="design">
+                    <div class="project-img">
+                        <img src="https://via.placeholder.com/600x400" alt="Projeto 3">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Design de Dashboard</h3>
+                        <p class="project-description">Design de interface para dashboard administrativo com tema claro
+                            e escuro.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-eye"></i> Ver</a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Código</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card" data-category="web">
+                    <div class="project-img">
+                        <img src="https://via.placeholder.com/600x400" alt="Projeto 4">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Blog Pessoal</h3>
+                        <p class="project-description">Blog pessoal com sistema de postagens e comentários.</p>
+                        <div class="project-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fas fa-eye"></i> Ver</a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i> Código</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact reveal">
+            <div class="section-header">
+                <h2 class="section-title">Entre em Contato</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Vamos conversar!</h3>
+                    <p>Estou disponível para freelance, projetos de tempo integral ou apenas para trocar ideias sobre
+                        desenvolvimento web.</p>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>caiomatosmiranda2008@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Telefone</h4>
+                            <p>+55 (31) 98825-0983</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Localização</h4>
+                            <p>Belo Horizonte, Brasil</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/caiozin333" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/caio-matos-miranda-0aa900349/" target="_blank"
+                            class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="tel:+5531988250983" class="social-link">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                        <a href="https://instagram.com/caiozin.mm" target="_blank" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm" action="https://formsubmit.co/caiomatosmiranda2008@gmail.com" method="POST">
+
+                        <input type="hidden" name="_captcha" value="false">
+
+                        <div class="form-group">
+                            <div class="input-container">
+                                <input type="text" id="name" required>
+                                <label for="name">Nome</label>
+                                <span class="focus-border"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-container">
+                                <input type="email" id="email" required>
+                                <label for="email">Email</label>
+                                <span class="focus-border"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-container">
+                                <input type="text" id="subject" required>
+                                <label for="subject">Assunto</label>
+                                <span class="focus-border"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-container textarea">
+                                <textarea id="message" required></textarea>
+                                <label for="message">Mensagem</label>
+                                <span class="focus-border"></span>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn submit-btn">
+                            <span>Enviar Mensagem</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <div class="logo-text">Portfólio</div>
+            </div>
+            <p>© 2025 Todos os direitos reservados</p>
+            <div class="footer-social">
+                <a href="https://github.com/caiozin333" target="_blank" class="social-icon">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/caio-matos-miranda-0aa900349/" target="_blank" class="social-icon">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="tel:+5531988250983" class="social-icon">
+                    <i class="fas fa-phone"></i>
+                </a>
+                <a href="https://instagram.com/caiozin.mm" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+</body>
+
+</html>
